@@ -1,5 +1,5 @@
-const int shockSensorPin = 2; // Digital pin connected to the Shock Sensor module
-const int alertPin = 3;       // Digital pin connected to the Buzzer or LED
+const int shockSensorPin = 7; // Digital pin connected to the Shock Sensor module
+const int alertPin = 13;       // Digital pin connected to the Buzzer or LED
 
 void setup() {
   pinMode(shockSensorPin, INPUT);   // Set the Shock Sensor pin as INPUT
