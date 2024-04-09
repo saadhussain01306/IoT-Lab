@@ -24,7 +24,7 @@ void loop() {
 
 // Function to set the color of the RGB LED
 void setColor(int redValue, int greenValue, int blueValue) {
-  analogWrite(redPin, redValue);     // Set intensity of red LED
-  analogWrite(greenPin, greenValue); // Set intensity of green LED
-  analogWrite(bluePin, blueValue);   // Set intensity of blue LED
+  digitalWrite(redPin, redValue);     // Set intensity of red LED
+  digitalWrite(greenPin, greenValue); // Set intensity of green LED
+  digitalWrite(bluePin, blueValue);   // Set intensity of blue LED
 }
