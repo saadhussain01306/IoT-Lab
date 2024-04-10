@@ -1,3 +1,5 @@
+// implemented using SMD RGB LED module
+
 const int redPin = 9;    // Digital pin connected to the red lead of SMD RGB LED
 const int greenPin = 10; // Digital pin connected to the green lead of SMD RGB LED
 const int bluePin = 11;  // Digital pin connected to the blue lead of SMD RGB LED
