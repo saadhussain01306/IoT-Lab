@@ -1,4 +1,4 @@
-const int flashLightPin = 8; // Digital pin connected to laser module
+const int flashLightPin = 8; // Digital pin connected to flashLight module
 
 void setup() {
   pinMode(flashLightPin, OUTPUT);
