@@ -1,24 +1,15 @@
-int ledPin = 13;
-int buttonPin = 7;
-int buttonState = 0;
+const int flashLightPin = 8; // Digital pin connected to laser module
 
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(ledPin, OUTPUT);      // sets the digital pin 13 as output
-  pinMode(buttonPin, INPUT);      // sets the digital pin 7 as input
+  pinMode(flashLightPin, OUTPUT);
 }
 
 void loop() {
-  // read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin);
-
-  // check if the pushbutton is pressed.
-  // if it is, the buttonState is HIGH:
-  if (buttonState == HIGH) {
-    // turn LED on:
-    digitalWrite(ledPin, HIGH);
-  } else {
-    // turn LED off:
-    digitalWrite(ledPin, LOW);
-  }
+  // Turn on the laser for 1 second
+  digitalWrite(flashLightPin, HIGH);
+  delay(1000);
+  
+  // Turn off the laser for 1 second
+  digitalWrite(flashLightPin, LOW);
+  delay(1000);
 }
