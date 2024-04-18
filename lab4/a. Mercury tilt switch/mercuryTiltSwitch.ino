@@ -1,5 +1,5 @@
 const int tiltSwitchPin = 2; // Digital pin connected to tilt switch
-const int ledPin = 13;       // Digital pin connected to LED
+const int ledPin = 13;       // Digital pin connected to LED (it is an in-built LED in UNO)
 
 void setup() {
   pinMode(tiltSwitchPin, INPUT);
