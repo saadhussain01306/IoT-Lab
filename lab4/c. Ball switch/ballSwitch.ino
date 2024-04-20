@@ -3,15 +3,18 @@ const int ledPin = 13;       // Digital pin connected to LED (it is an in-built 
 
 void setup() {
   pinMode(ballSwitchPin, INPUT);
-  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
 }
 
 void loop() {
   int ballState = digitalRead(ballSwitchPin);
   
   if (ballState == HIGH) {
-    digitalWrite(ledPin, HIGH); // Turn on LED
+    digitalWrite(ledPin, HIGH);
+    Serial.println("High"); // Turn on LED
   } else {
-    digitalWrite(ledPin, LOW);  // Turn off LED
+    digitalWrite(ledPin, LOW);
+    Serial.println("Low");  // Turn off LED
   }
+  delay(1000);
 }
