@@ -35,7 +35,7 @@ void loop()
   // Check if a heartbeat is detected
   if (pulseSensor.sawStartOfBeat()) 
   {
-    Serial.println("♥ A HeartBeat Happened!");
+    Serial.println("A HeartBeat Happened!");
     Serial.print("BPM: ");
     Serial.println(currentBPM);
   }
