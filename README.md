@@ -1,6 +1,6 @@
 # JSSSTU IoT-Lab
 
-# LAb1 
+# Lab-1 
 ## a.Temperature Based Sensor. 
 ## b.FIRE SENSOR. 
 ## c.HEART BEAT SENSOR. 
